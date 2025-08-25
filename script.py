@@ -10,8 +10,7 @@ def count_commits(user):
     repos_url = f"https://api.github.com/users/{user}/repos"
     repos_response = requests.get(repos_url, headers=headers)
     repos = repos_response.json()
-    
-    
+
     for repo in repos:
         repo_name = repo['name']
         commits_url = f"https://api.github.com/repos/{user}/{repo_name}/commits"
