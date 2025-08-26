@@ -67,18 +67,3 @@ if __name__ == "__main__":
 
         print("\nCommits per Month:")
         print(per_month)
-
-
-    
-         
-       
-
-
-
-    
-
-
-
-
-
-
