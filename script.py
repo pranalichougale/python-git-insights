@@ -10,7 +10,7 @@ def count_commits(user):
     all_commit_dates = []
 
     
-    # Step 1: Get all repos of the user
+    # Step 1: Get all repos of the user.
     repos_url = f"https://api.github.com/users/{user}/repos"
     repos_response = requests.get(repos_url, headers=headers)
     repos = repos_response.json()
