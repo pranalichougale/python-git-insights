@@ -57,7 +57,7 @@ def count_of_pulls(user):
         else:
             print(f"Could not fetch pulls for {repo_name}")
 
-def list_of_branch(user):
+def list_of_branchs(user):
     all_branches={}
     
     repos_url = f"https://api.github.com/users/{user}/repos"
@@ -90,7 +90,7 @@ if __name__ == "__main__":
     total = count_of_pulls(user)
     print(f"Total pulls by {user}: {total}")
     
-    branches = list_of_branch(user)
+    branches = list_of_branchs(user)
     print(f"Branches: {branches}")
     
 
